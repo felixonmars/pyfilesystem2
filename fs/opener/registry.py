@@ -94,7 +94,7 @@ class Registry(object):
                 exception
             )
         else:
-            if not issubclass(opener, Opener):
+            if not isinstance(opener, Opener):
                 raise EntryPointError(
                     'entry point did not return an opener'
                 )
